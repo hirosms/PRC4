@@ -4,27 +4,24 @@
  * and open the template in the editor.
  */
 
-package SolutionPackage;
-
-import ProblemPackage.Problem;
+package ProblemPackage;
 
 /**
  * 
  * @author Sergio Martín Santana <sergio.ms.91@gmail.com>
  */
-public class FiboSolution implements Solution {
+public class FactProblem implements Problem{
     
-    int s;
+    int n;
 
-    //@Override
-    public int getSolution() {
-        return s;
+  //  @Override
+    public int getProblem() {
+        return n;
     }
 
     //@Override
-    public void setSolution(int a) {
-        s = a;
+    public void setProblem(int a) {
+        n = a;
     }
-    
 
 }

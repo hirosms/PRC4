@@ -14,8 +14,8 @@ import ProblemPackage.Problem;
  */
 public interface Solution {
     
-   int getSolution();
-   void setSolution(int a);
+   //int getSolution();
+   //void setSolution(int a);
    
     
 }

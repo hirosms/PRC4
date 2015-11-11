@@ -6,10 +6,8 @@
 
 package DivConqPackage;
 
-import ProblemPackage.FiboProblem;
-import ProblemPackage.Problem;
-import SolutionPackage.FiboSolution;
-import SolutionPackage.Solution;
+import ProblemPackage.*;
+import SolutionPackage.*;
 
 /**
  * 
@@ -25,14 +23,13 @@ public class FiboDivConq extends DivConqTemplate {
     @Override
     protected Solution simplySolve(Problem p) {
         Solution aux  = new FiboSolution();
-        aux.setSolution(1);
+        ((FiboSolution)aux).setSolution(1);
         return aux;
     }
 
     @Override
     protected Problem[] decompose(Problem p) {
         Problem [] aux = new Problem [2];
-        
         aux[0]  = new FiboProblem();
         aux[1]  = new FiboProblem();
       //int a;
@@ -49,8 +46,8 @@ public class FiboDivConq extends DivConqTemplate {
         int ret = 0;
         Solution s = new FiboSolution();
         //((FiboProblem)p).getProblem();
-        ret += ss[0].getSolution()+ss[1].getSolution();
-        s.setSolution(ret);
+        ret += ((FiboSolution)ss[0]).getSolution()+((FiboSolution)ss[1]).getSolution();
+        ((FiboSolution)s).setSolution(ret);
         return s;
     }
 }

@@ -5,9 +5,6 @@
  */
 package ProblemPackage;
 
-import MiscPackage.Data_Random;
-import java.util.ArrayList;
-
 /**
  *
  * @author Sergio Martín Santana <sergio.ms.91@gmail.com>

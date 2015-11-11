@@ -6,14 +6,12 @@
 
 package SolutionPackage;
 
-import ProblemPackage.Problem;
-
 /**
  * 
  * @author Sergio Martín Santana <sergio.ms.91@gmail.com>
  */
-public class FiboSolution implements Solution {
-    
+public class FactSolution implements Solution{
+  
     int s;
 
     //@Override
